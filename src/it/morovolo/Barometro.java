@@ -1,7 +1,8 @@
 package it.morovolo;
 /**
  * @author LucoMoro
- * simulazione di un barometro
+ * @version 0.1.0
+ *  * simulazione di un barometro
  * */
 public class Barometro {
 	double b = 0.190; // esponente 1/5.255
