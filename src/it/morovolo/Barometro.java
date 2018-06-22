@@ -1,7 +1,7 @@
 package it.morovolo;
 /**
  * @author LucoMoro
- * @version 0.1.0
+ * @version 0.1.0    
  *  * simulazione di un barometro
  * */
 public class Barometro {
