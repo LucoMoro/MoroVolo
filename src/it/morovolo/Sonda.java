@@ -1,6 +1,7 @@
 package it.morovolo;
 /**
  * @author LucoMoro
+ * @version 0.1.0
  * simulazione di una sonda
  * */
 
