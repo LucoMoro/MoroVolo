@@ -23,7 +23,7 @@ public class Barometro {
 				for (int i = 1012; i>800; i--) {
 					 pressioneAttuale=i;// impostiamo la pressione attuale a i che è il nostro contatore
 					System.out.println("altezza barometro: " + (int) getAltezza() + "m\n");//qui vedremo l'altezza attuale ogni volta che il ciclo verrà eseguito
-							
+						 	
 							
 					try {//try catch serve per passare su eventuali errori
 						Thread.sleep(10);//sleep serve per il riposo
