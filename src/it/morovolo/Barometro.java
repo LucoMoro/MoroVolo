@@ -12,20 +12,20 @@ public class Barometro {
 	int altezza;
 	double pressioneLivelloMare;//pressione al livello del mare
 	double pressioneAttuale;//pressione attuale
-	//private double HPA;
+
 
 	public Barometro(double _pressioneLivelloMare) {//questa classe associa alcuni double in modo che si possano portare in SOnda
 		pressioneLivelloMare = _pressioneLivelloMare;
-		//pressioneAttuale = _pressioneAttuale;
 		new Thread() {// questo thread simula l'alzarsi del barometro e quindi l abbassarsi della pressione
+
 			/**essendo un void non deve ritornare nessun valore */
 			public void run() {
 				System.out.println("Thread: " + getName() + " running");// qua ci comparià a video dicendo che il thread sta correndo
 				for (int i = 1012; i>800; i--) {
-					 pressioneAttuale=i;// impostiamo la pressione attuale a i che è il nostro contatore
+					pressioneAttuale=i;// impostiamo la pressione attuale a i che è il nostro contatore
 					System.out.println("altezza barometro: " + (int) getAltezza() + "m\n");//qui vedremo l'altezza attuale ogni volta che il ciclo verrà eseguito
-						 	
-							
+
+
 					try {//try catch serve per passare su eventuali errori
 						Thread.sleep(10);//sleep serve per il riposo
 					} catch (InterruptedException e) {
@@ -52,9 +52,7 @@ public class Barometro {
 		return 0;
 	}
 
-//	public void setHPA(double d) {
-//		HPA = d;
-//	}
+
 
 	/**
 	 * 
