@@ -14,9 +14,9 @@ public class Barometro {
 	double pressioneAttuale;//pressione attuale
 	//private double HPA;
 
-	public Barometro(double _pressioneLivelloMare, double _pressioneAttuale) {//questa classe associa alcuni double in modo che si possano portare in SOnda
+	public Barometro(double _pressioneLivelloMare) {//questa classe associa alcuni double in modo che si possano portare in SOnda
 		pressioneLivelloMare = _pressioneLivelloMare;
-		pressioneAttuale = _pressioneAttuale;
+		//pressioneAttuale = _pressioneAttuale;
 		new Thread() {// questo thread simula l'alzarsi del barometro e quindi l abbassarsi della pressione
 			/**essendo un void non deve ritornare nessun valore */
 			public void run() {
