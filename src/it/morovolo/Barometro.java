@@ -6,11 +6,10 @@ package it.morovolo;
  *  * simulazione di un barometro
  * */
 public class Barometro {
-	double b = 0.190; // esponente 1/5.255
-	double a; // pressione attuale/pressione livello del mare
-	double c; // potenza di a e b
-	double h; // altezza
-	int altezza;
+	double esponente = 0.190; // esponente 1/5.255
+	double frazioneTraPressioni; // pressione attuale/pressione livello del mare
+	double potenza; // potenza di a e b
+	double altezza;
 	double pressioneLivelloMare;//pressione al livello del mare
 	double pressioneAttuale;//pressione attuale
 	public Barometro(double _pressioneLivelloMare) {//questa classe associa alcuni double in modo che si possano portare in SOnda
@@ -54,9 +53,9 @@ public class Barometro {
 	 * @return altezza in metri calcolata a partire dalla pressione attuale
 	 */
 	public double getAltezza() {// con questo  metodo ci calcoliamo l'altezza
-		a = pressioneAttuale / pressioneLivelloMare;
-		c = Math.pow(a, b);
-		h = 44330 * (1 - c);
-		return h;
+		frazioneTraPressioni = pressioneAttuale / pressioneLivelloMare;
+		potenza = Math.pow(frazioneTraPressioni, esponente);
+		altezza = (int) (44330 * (1 - potenza));
+		return altezza;
 	}
 }
