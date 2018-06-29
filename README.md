@@ -24,7 +24,7 @@ I due cicli presenti nella classe **Sonda** servono per far rispettivamente sali
 
 
 ## Il file MoroVolo
-per creare un file bisogna cliccare su: **file --> export --> Java --> runnable jar file --> ** e selezionare il secondo package ovvero **Package required libraries into generated JAR**.  
+per creare un file bisogna cliccare su:  **file --> export --> Java --> runnable jar file -->**   e selezionare il secondo package ovvero **Package required libraries into generated JAR**.  
 Per eseguirlo bisogna aprire la Console e digitare: **cd Desktop --> java -jar MoroVolo.jar**... (qui bisogna inserire il nome del programma)...  e in caso ci siano aggiungere i parametri.
 
 
