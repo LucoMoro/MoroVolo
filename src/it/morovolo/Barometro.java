@@ -5,7 +5,7 @@ package it.morovolo;
  * @version 0.1.0    
  *  * simulazione di un barometro
  * */
-public class Barometro {
+public class Barometro implements BarometroInterface{
 	double esponente = 0.190; // esponente 1/5.255
 	double frazioneTraPressioni; // pressione attuale/pressione livello del mare
 	double potenza; // potenza di a e b
@@ -44,10 +44,6 @@ public class Barometro {
 		}.start();
 	}
 	
-	public double GetHPA() {
-		return 0;
-	}
-
 	/**
 	 * 
 	 * @return altezza in metri calcolata a partire dalla pressione attuale

@@ -12,7 +12,8 @@ public class Sonda {
 			double  percentuale=Double.parseDouble(args[2]);//altezza paracadute nuova
 			double altezzaDiSganciov2 = Double.parseDouble(args[1]);//altezza sgancio nuova
 			int altezzaDiSgancio;
-			Barometro b = new Barometro(Double.parseDouble(args[0]));//definizione di pressioneAttuale e pressioneLivelloMare. parte il thread
+			BarometroInterface b = new Barometro(Double.parseDouble(args[0]));//definizione di pressioneAttuale e pressioneLivelloMare. parte il thread
+			BarometroInterface b1= new BMP280(Double.parseDouble(args[3]));
 			b.getAltezza();//ci stiamo passando il parametro della classe Barometro
 			System.out.println("l'altezza è di " + b.getAltezza() + " m ");//facciamo comparire a video a quanti metri siamo
 			/**qui andremo a capire quando la sondra dovrà sganciarsi*/
